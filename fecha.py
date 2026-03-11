@@ -1,6 +1,8 @@
-# fecha.py
-from datetime import date
+from datetime import date, timedelta
 
 hoy = date.today()
-print(f"Hoy es {hoy}")
+manana = hoy + timedelta(days=1)
+print(f"Hoy: {hoy}, Mañana: {manana}")
 print("Este archivo fue modificado en local")
+print("Este archivo fue modificado DIRECTAMENTE EN GITHUB")
+print("Ambos cambios combinados después del conflicto")
